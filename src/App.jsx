@@ -12,8 +12,7 @@ const App = () => {
   const url = "https://backend-1-iyjt.onrender.com";
   return (
     <div>
-      <ToastContainer />
-      <Navbar />
+      <ToastContainer position="top-right" autoClose={3000} /> <Navbar />
       <hr />
       <div className="flex flex-row sm:flex-row min-h-screen">
         <Sidebar />

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 import axios from "axios";
 
 const Promo = ({ url }) => {
@@ -34,7 +36,10 @@ const Promo = ({ url }) => {
         expiresAt,
       });
       if (res.data.success) {
-        alert("Promo created successfully");
+        toast.success("Promo created successfully", {
+          position: "top-right",
+          autoClose: 3000,
+        });
         setCode("");
         setDiscount("");
         setType("flat");
