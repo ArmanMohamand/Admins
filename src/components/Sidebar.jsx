@@ -49,8 +49,7 @@ const Sidebar = () => {
               : "flex items-center gap-5 border border-[#a9a9a9] border-r-0 py-2 px-2.5 rounded rounded-r-[0] cursor-pointer"
           }
         >
-          <img src={assets.add_icon} alt="" />
-          {/* baad me change krna h promo incone se  */}
+          <img src={assets.promo} className="w-6 h-6 sm:w-8 sm:h-8" alt="" />
           <p className="hidden sm:block">Promo Codes</p>
         </NavLink>
       </div>

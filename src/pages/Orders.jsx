@@ -74,7 +74,7 @@ const Orders = ({ url }) => {
                   {order.address.street},
                 </p>
                 <p className="whitespace-normal break-keep">
-                  {order.address.city}, {order.address.state},{" "}
+                  {order.address.city}, {order.address.state},
                   {order.address.country}, {order.address.zipcode}
                 </p>
               </div>
